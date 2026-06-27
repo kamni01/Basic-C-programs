@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+int choice,num,i,fact;
+printf("1.FACTORIAL\n");
+printf("2.PRIME\n");
+printf("3.ODD/EVEN\n");
+printf("4.EXIT\n");
+printf("\nYOUR CHOICE?\n");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1:
+    printf("\nEnter number: ");
+    scanf("%d",&num);
+    fact=1;
+    for(i=1;i<=num;i++)
+    fact=fact*i;
+    printf("Factorial value=%d\n",fact);
+    break;
+case 2:
+    printf("\nEnter number: ");
+    scanf("%d",&num);
+    if(num<2) 
+    {
+    printf("Not a prime number");
+    break;
+    }
+    for(i=2;i<num;i++)
+    { 
+        if(num%i==0)
+        {
+            printf("Not a prime number\n");
+            break;
+        }
+} 
+    if(i==num)
+    printf("Prime number\n");
+    break;
+case 3:
+     printf("Enter number: ");
+     scanf("%d",&num);
+     if(num%2==0)
+     printf("Even number\n");
+     else
+     printf("Odd number\n");
+     break;
+case 4:
+     exit(0);
+     default:
+     printf("Wrong choice!\n");
+}
+}
