@@ -2,9 +2,9 @@
 #include <stdlib.h>
 int main() {
 int choice,num,i,fact;
-printf("1.FACTORIAL\n");
-printf("2.PRIME\n");
-printf("3.ODD/EVEN\n");
+printf("1.FACTORIAL OF A NUMBER\n");
+printf("2.PRIME OR NOT\n");
+printf("3.ODD OR EVEN\n");
 printf("4.EXIT\n");
 printf("\nYOUR CHOICE?\n");
 scanf("%d",&choice);
